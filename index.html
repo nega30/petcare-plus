@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff9f2">
+  <title>PetCare+ | Happy Pets, Happy Hearts</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- Header -->
+    <header class="topbar">
+      <a class="brand" href="#" data-page="home">
+        <span class="brand-icon">🐾</span>
+        <span>PetCare<span class="brand-plus">+</span></span>
+      </a>
+      <button class="avatar-button" aria-label="Open pet profile" data-page="profile">🐶</button>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="page active" id="home">
+        <div class="welcome">
+          <div>
+            <p class="eyebrow">YOUR PET'S HAPPY PLACE</p>
+            <h1>Hey, Alex! <span>👋</span></h1>
+            <p class="muted">Ready to make your pet's day?</p>
+          </div>
+        </div>
+
+        <article class="hero-card">
+          <div class="hero-copy">
+            <span class="hero-label">YOUR BEST FRIEND</span>
+            <h2>Every day is<br>better with pets.</h2>
+            <p>Little paws, big love.</p>
+            <button class="button button-light" data-page="profile">
+              Meet Buddy <span>→</span>
+            </button>
+          </div>
+          <img class="hero-dog"
+            src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=600&q=85"
+            alt="Happy golden retriever">
+          <span class="hero-decoration decor-one">✦</span>
+          <span class="hero-decoration decor-two">♡</span>
+        </article>
+
+        <!-- Daily care -->
+        <section class="section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">STAY ON TRACK</p>
+              <h2>Today's care</h2>
+            </div>
+            <span class="count-pill">2 tasks</span>
+          </div>
+
+          <div class="care-list">
+            <article class="care-card">
+              <span class="care-icon food">🥣</span>
+              <div class="care-info">
+                <h3>Morning meal</h3>
+                <p>Buddy's breakfast</p>
+                <span class="time">8:00 AM</span>
+              </div>
+              <button class="check-button" data-task="meal"
+                aria-label="Mark breakfast complete">✓</button>
+            </article>
+
+            <article class="care-card">
+              <span class="care-icon walk">🦮</span>
+              <div class="care-info">
+                <h3>Daily walk</h3>
+                <p>A little outdoor fun</p>
+                <span class="time">5:30 PM</span>
+              </div>
+              <button class="check-button" data-task="walk"
+                aria-label="Mark walk complete">✓</button>
+            </article>
+          </div>
+          <p id="task-message" class="small-note">
+            Tap ✓ when you've completed a task.
+          </p>
+        </section>
+
+        <!-- Services -->
+        <section class="section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">HERE FOR EVERY PAW</p>
+              <h2>Explore services</h2>
+            </div>
+            <button class="text-button" data-page="services">See all →</button>
+          </div>
+
+          <div class="service-grid">
+            <button class="service-card" data-service="Vet visit">
+              <span class="service-icon mint">🩺</span>
+              <strong>Vet visit</strong>
+              <span>Expert care</span>
+            </button>
+            <button class="service-card" data-service="Grooming">
+              <span class="service-icon peach">🛁</span>
+              <strong>Grooming</strong>
+              <span>Fresh & fluffy</span>
+            </button>
+            <button class="service-card" data-service="Pet walking">
+              <span class="service-icon yellow">🐕</span>
+              <strong>Pet walking</strong>
+              <span>Let's get moving</span>
+            </button>
+            <button class="service-card" data-service="Pet nutrition">
+              <span class="service-icon lavender">🥕</span>
+              <strong>Nutrition</strong>
+              <span>Healthy habits</span>
+            </button>
+          </div>
+        </section>
+
+        <article class="reminder-card">
+          <span class="reminder-icon">💉</span>
+          <div>
+            <p class="eyebrow">COMING UP</p>
+            <h3>Vaccination reminder</h3>
+            <p>Buddy's next health check is coming up.</p>
+          </div>
+          <button class="arrow-button" data-page="profile"
+            aria-label="View pet health">→</button>
+        </article>
+
+        <!-- Home AI shortcut -->
+        <section class="section">
+          <article class="reminder-card">
+            <span class="reminder-icon">🤖</span>
+            <div>
+              <p class="eyebrow">SMART PET CARE</p>
+              <h3>Get an AI recommendation</h3>
+              <p>Explore personalized educational care suggestions.</p>
+              <button class="text-button" data-page="profile">
+                Try PetCare AI →
+              </button>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <!-- SERVICES PAGE -->
+      <section class="page" id="services">
+        <p class="eyebrow">MADE FOR YOUR PET</p>
+        <h1>Our services</h1>
+        <p class="muted page-intro">
+          Everything your best friend needs, all in one place.
+        </p>
+
+        <div class="service-grid service-grid-large">
+          <button class="service-card" data-service="Vet visit">
+            <span class="service-icon mint">🩺</span>
+            <strong>Vet visit</strong>
+            <span>Health and wellness</span>
+          </button>
+          <button class="service-card" data-service="Grooming">
+            <span class="service-icon peach">🛁</span>
+            <strong>Grooming</strong>
+            <span>Bath and brush</span>
+          </button>
+          <button class="service-card" data-service="Pet walking">
+            <span class="service-icon yellow">🦮</span>
+            <strong>Pet walking</strong>
+            <span>Exercise and play</span>
+          </button>
+          <button class="service-card" data-service="Pet nutrition">
+            <span class="service-icon lavender">🥕</span>
+            <strong>Nutrition</strong>
+            <span>Food and wellness</span>
+          </button>
+        </div>
+
+        <button class="button button-primary full-button" data-page="booking">
+          Book a service →
+        </button>
+      </section>
+
+      <!-- BOOKING PAGE -->
+      <section class="page" id="booking">
+        <p class="eyebrow">A LITTLE CARE GOES A LONG WAY</p>
+        <h1>Book an appointment</h1>
+        <p class="muted page-intro">Let's find the perfect time for Buddy.</p>
+
+        <form id="booking-form" class="booking-card">
+          <label for="pet-name">Pet's name</label>
+          <input id="pet-name" value="Buddy" required>
+
+          <label for="service">Choose a service</label>
+          <select id="service" required>
+            <option>Vet visit</option>
+            <option>Grooming</option>
+            <option>Pet walking</option>
+            <option>Pet nutrition</option>
+          </select>
+
+          <label for="appointment-date">Choose a date</label>
+          <input id="appointment-date" type="date" required>
+
+          <label>Choose a time</label>
+          <div class="time-grid">
+            <button type="button" class="time-option selected">10:00 AM</button>
+            <button type="button" class="time-option">11:30 AM</button>
+            <button type="button" class="time-option">2:00 PM</button>
+            <button type="button" class="time-option">4:30 PM</button>
+          </div>
+
+          <label for="notes">
+            Anything we should know? <span class="muted">(optional)</span>
+          </label>
+          <textarea id="notes" rows="3"
+            placeholder="Tell us about your pet..."></textarea>
+
+          <button class="button button-primary full-button" type="submit">
+            Confirm appointment ✓
+          </button>
+          <p class="small-note">
+            Demo only: your booking is not sent to a clinic.
+          </p>
+        </form>
+
+        <div id="booking-result" class="result-card" hidden></div>
+      </section>
+
+      <!-- PET PROFILE AND AI RECOMMENDATION -->
+      <section class="page" id="profile">
+        <p class="eyebrow">YOUR FURRY FAMILY</p>
+        <h1>Pet profile</h1>
+
+        <article class="profile-card">
+          <img
+            src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=600&q=85"
+            alt="Buddy the golden retriever">
+          <h2>Buddy 🐾</h2>
+          <p class="muted">Golden Retriever · 3 years old</p>
+
+          <div class="profile-stats">
+            <div><strong>3 yrs</strong><span>Age</span></div>
+            <div><strong>28 kg</strong><span>Weight</span></div>
+            <div><strong>Happy</strong><span>Mood</span></div>
+          </div>
+        </article>
+
+        <section class="section">
+          <div class="section-heading">
+            <h2>Health & wellness</h2>
+          </div>
+
+          <article class="health-row">
+            <span class="health-icon">💉</span>
+            <div>
+              <h3>Vaccination</h3>
+              <p>Next checkup · Add clinic details</p>
+            </div>
+            <span class="health-status">Reminder</span>
+          </article>
+
+          <article class="health-row">
+            <span class="health-icon">🦷</span>
+            <div>
+              <h3>Dental care</h3>
+              <p>Keep those teeth healthy</p>
+            </div>
+            <span class="health-status">Routine</span>
+          </article>
+
+          <button class="button button-primary full-button" data-page="booking">
+            Book a health check →
+          </button>
+        </section>
+
+        <!-- AI/ML FORM -->
+        <section class="section ai-care-section">
+          <p class="eyebrow">POWERED BY MACHINE LEARNING</p>
+          <h2>Personalized pet care 🤖</h2>
+          <p class="muted page-intro">
+            Enter your pet's details to receive an educational care suggestion.
+          </p>
+
+          <form id="pet-ai-form" class="booking-card">
+            <label for="ai-species">Pet species</label>
+            <select id="ai-species" name="species" required>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+            </select>
+
+            <label for="ai-age">Age group</label>
+            <select id="ai-age" name="age_group" required>
+              <option value="young">Young</option>
+              <option value="adult" selected>Adult</option>
+              <option value="senior">Senior</option>
+            </select>
+
+            <label for="ai-activity">Activity level</label>
+            <select id="ai-activity" name="activity_level" required>
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+
+            <label for="ai-weight">Weight status</label>
+            <select id="ai-weight" name="weight_status" required>
+              <option value="normal" selected>Normal</option>
+              <option value="overweight">Overweight</option>
+            </select>
+
+            <button class="button button-primary full-button" type="submit">
+              Get AI Recommendation
+            </button>
+          </form>
+
+          <div id="ai-result" class="result-card"
+            role="status" aria-live="polite"></div>
+
+          <p class="small-note">
+            Educational demonstration only. This model is trained on a small
+            synthetic dataset and is not veterinary advice.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <!-- Bottom navigation -->
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item active" data-page="home">
+        <span>⌂</span><small>Home</small>
+      </button>
+      <button class="nav-item" data-page="services">
+        <span>♡</span><small>Services</small>
+      </button>
+      <button class="nav-item nav-book" data-page="booking">
+        <span>＋</span><small>Book</small>
+      </button>
+      <button class="nav-item" data-page="profile">
+        <span>🐾</span><small>My pet</small>
+      </button>
+    </nav>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
